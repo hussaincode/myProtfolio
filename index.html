@@ -49,7 +49,6 @@
         <h1 class="text-light"><a href="index.html">Hussain</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://twitter.com/hussaincode" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://m.facebook.com/100005876107394/" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://www.instagram.com/hussaincode.in/" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="https://github.com/hussaincode" class="github"><i class="bi bi-github"></i></a>
           <a href="https://www.linkedin.com/in/hussaincode/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -64,34 +63,7 @@
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        
-         <!-- .Payment-Start -->
-          <li>
-              <a class="nav-link scrollto"><i class="bi bi-credit-card"> </i> <button id="rzp-button1"  type="button" class="btn btn-secondary btn-sm">Pay Me</button></a>
-          </li>
-           </ul>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-var options = {
-    "key": "rzp_live_TaxC7RBC1G1v7J", // Enter the Key ID generated from the Dashboard
-    "amount": "10000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "INR",
-    "name": "HussainCode",
-    "description": "Transaction",
-    "image": "assets/img/profile-img.jpg",
-    "handler": function (response){
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature)
-    }
-};
-var rzp1 = new Razorpay(options);
-document.getElementById('rzp-button1').onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-}
-</script>
-<!-- .Payment End -->
+      
        
       </nav><!-- .nav-menu -->
     </div>
