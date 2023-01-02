@@ -64,33 +64,6 @@
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         
-         <!-- .Payment-Start -->
-          <li>
-              <a class="nav-link scrollto"><i class="bi bi-credit-card"> </i> <button id="rzp-button1"  type="button" class="btn btn-secondary btn-sm">Pay Me</button></a>
-          </li>
-           </ul>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-var options = {
-    "key": "rzp_live_TaxC7RBC1G1v7J", // Enter the Key ID generated from the Dashboard
-    "amount": "10000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "INR",
-    "name": "HussainCode",
-    "description": "Transaction",
-    "image": "assets/img/profile-img.jpg",
-    "handler": function (response){
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature)
-    }
-};
-var rzp1 = new Razorpay(options);
-document.getElementById('rzp-button1').onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-}
-</script>
-<!-- .Payment End -->
        
       </nav><!-- .nav-menu -->
     </div>
